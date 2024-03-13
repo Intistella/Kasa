@@ -1,0 +1,35 @@
+.App-header{
+    display: flex;
+    width: 1240px;
+    height: 68px;
+    justify-content: center;
+    align-items: center;
+    gap: 720.678px;
+}
+
+.App-logo{
+    width: 210.322px;
+    height: 68px;
+}
+
+.App-nav{
+    display: flex;
+    align-items: flex-start;
+    gap: 57px;
+}
+
+.nav-element{
+    color: #000;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34.224px;
+    text-decoration: none;
+}
+
+.nav-element:hover{
+    text-decoration: underline;
+}
+
