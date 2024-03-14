@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+     url("./fontFamily/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+   
+   
+.error-page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 139px;    
+    margin-top: 139px;
+    margin-bottom: 139px;
+
+}
+
+.error-code{
+    display: flex;
+    justify-content: center;
+    color: #FF6060;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 288px;
+    font-weight: 700; 
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.error-text{
+    display: flex;
+    justify-content: center;
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.error-link{
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+}

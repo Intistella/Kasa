@@ -1322,6 +1322,11 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.0.tgz#a5417ae8427873f1dd08b70b3574b453e67b5f7f"
   integrity sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==
 
+"@fontsource/montserrat@^5.0.17":
+  version "5.0.17"
+  resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-5.0.17.tgz#ea8003b028dc41d5baab1ab7765193fd342548c3"
+  integrity sha512-3V3F8GqeN8wawLmAkAfTCYsBYRKu+JLm6ivWWX/v0dCYYPcwtQX0h5Z8j68N1YumuT75MqrghqU42w9DnFHojQ==
+
 "@humanwhocodes/config-array@^0.11.14":
   version "0.11.14"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.14.tgz#d78e481a039f7566ecc9660b4ea7fe6b1fec442b"
@@ -9394,6 +9399,11 @@ web-vitals@^2.1.4:
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-2.1.4.tgz#76563175a475a5e835264d373704f9dde718290c"
   integrity sha512-sVWcwhU5mX6crfI5Vd2dC4qchyTqxV8URinzt25XqVh+bHEPGH4C3NPrNionCP7Obx59wrYEbNlw4Z8sjALzZg==
+
+webfontloader@^1.6.28:
+  version "1.6.28"
+  resolved "https://registry.yarnpkg.com/webfontloader/-/webfontloader-1.6.28.tgz#db786129253cb6e8eae54c2fb05f870af6675bae"
+  integrity sha512-Egb0oFEga6f+nSgasH3E0M405Pzn6y3/9tOVanv/DLfa1YBIgcv90L18YyWnvXkRbIM17v5Kv6IT2N6g1x5tvQ==
 
 webidl-conversions@^4.0.2:
   version "4.0.2"

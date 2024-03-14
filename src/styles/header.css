@@ -2,6 +2,7 @@
     display: flex;
     width: 1240px;
     height: 68px;
+    margin-top: 45px;
     justify-content: center;
     align-items: center;
     gap: 720.678px;
@@ -24,7 +25,7 @@
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 34.224px;
     text-decoration: none;
 }
