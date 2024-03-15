@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+     url("./fontFamily/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 1240px;
+    border-radius: 25px;
+    background: #F6F6F6;
+    margin-top: 45px;
+    padding: 56px;
+}
+
+.card{
+    position: relative;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+}
+
+.card-img{
+    position: relative;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-text{
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: absolute;
+    top: 275px;
+    z-index: 1;    
+}
+
+.card-title{
+    color: #fff;    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+    text-wrap: wrap;  
+}

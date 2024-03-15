@@ -6,8 +6,10 @@ import '../styles/footer.css'
 export default function(){
     return(
         <footer>
-            <img src={logoFooter} className="footer-logo" alt="logo"/>  
-            <p className="footer-text">© 2020 Kasa. All rights reserved</p>
+            <div className="footer">
+                <img src={logoFooter} className="footer-logo" alt="logo"/>  
+                <p className="footer-text">© 2020 Kasa. All rights reserved</p>
+            </div>
         </footer>
     )
 }

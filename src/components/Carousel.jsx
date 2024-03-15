@@ -4,6 +4,7 @@ import '../data/logements.json'
 import nextArrow from '../assets/arrowRight.png'
 import previousArrow from '../assets/arrowLeft.png'
 
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function ({pictures}){
     const [currentSlide, setCurrentSlide] = useState(0)
@@ -22,12 +23,12 @@ export default function ({pictures}){
                 <div className="carousel-container">
                     <div className="slide">
                         {pictures.map((picture, index) => (
-                        <div className="slides-fade" key={index} hidden={currentSlide === index ? false : true}>
-                            <div className="number-text">
-                                {index + 1} / {pictures.length}
+                            <div className="slides-fade" key={index} hidden={currentSlide === index ? false : true}>
+                                <div className="number-text">
+                                    {index + 1} / {pictures.length}
+                                </div>
+                                <img src={picture} alt="" style={{ width: '100%' }} />
                             </div>
-                            <img src={picture} alt="" style={{ width: '100%' }} />
-                        </div>
                         ))}
                         <div className="previous-arrow" onClick={previous}>
                             <img src={previousArrow} alt="" />

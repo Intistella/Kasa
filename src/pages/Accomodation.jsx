@@ -2,6 +2,7 @@ import React from "react"
 import { useParams } from "react-router-dom"
 import logements from '../data/logements.json'
 import Error from "./Error"
+import Carousel from "../components/Carousel"
 
 export default function Accomodation(){
     const identifier = useParams()
@@ -12,10 +13,13 @@ export default function Accomodation(){
     }
 
     return (
-        <section>
-            <div className="carousel">
-            
-            </div>
-        </section>
+        <>
+            <main className="fiche-logement">
+                <div className="carrousel-logement">
+                    <Carousel pictures={logement.pictures} />
+                </div>
+            </main>
+        </>    
+                    
     )
 }
