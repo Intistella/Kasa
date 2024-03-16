@@ -28,6 +28,7 @@
     height: inherit;
     object-fit: cover;
     border-radius: 10px;
+    filter: brightness(65%);
 }
 
 .card-text{
@@ -36,7 +37,7 @@
     margin-right: 20px;
     position: absolute;
     top: 275px;
-    z-index: 1;    
+    z-index: 1;  
 }
 
 .card-title{
@@ -47,4 +48,5 @@
     font-weight: 700;
     text-decoration: none;
     text-wrap: wrap;  
+    margin: 5px;
 }

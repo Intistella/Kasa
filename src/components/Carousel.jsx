@@ -1,22 +1,16 @@
 import React from "react"
 import { useState } from "react"
 import '../data/logements.json'
-import nextArrow from '../assets/arrowRight.png'
-import previousArrow from '../assets/arrowLeft.png'
+import nextArrow from '../assets/arrowRight.svg'
+import previousArrow from '../assets/arrowLeft.svg'
+import '../styles/caroussel.css'
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function ({pictures}){
     const [currentSlide, setCurrentSlide] = useState(0)
-    const next = () => {
-        const image = pictures.length
-        setCurrentSlide((currentSlide+1)%image)
-    }
-
-    const previous = () => {
-        const image = pictures.length
-        setCurrentSlide((currentSlide+image-1)%image)
-    }
+    const image = pictures.length
+      
     if (pictures.length>1){
         return(
             <>
@@ -24,17 +18,17 @@ export default function ({pictures}){
                     <div className="slide">
                         {pictures.map((picture, index) => (
                             <div className="slides-fade" key={index} hidden={currentSlide === index ? false : true}>
-                                <div className="number-text">
+                                <div className="slide-number">
                                     {index + 1} / {pictures.length}
                                 </div>
                                 <img src={picture} alt="" style={{ width: '100%' }} />
                             </div>
                         ))}
-                        <div className="previous-arrow" onClick={previous}>
-                            <img src={previousArrow} alt="" />
+                        <div onClick={()=> setCurrentSlide((currentSlide+image-1)%image)}>
+                            <img className="previous-arrow" src={previousArrow} alt="" />
                         </div>
-                        <div className="next-arrow" onClick={next}>
-                            <img src={nextArrow} alt="" />
+                        <div onClick={()=>{setCurrentSlide((currentSlide+1)%image)}}>
+                            <img className="next-arrow" src={nextArrow} alt="" />
                         </div>
                     </div>
                 </div>
@@ -47,7 +41,7 @@ export default function ({pictures}){
                     <div className="slide">
                         {pictures.map((picture, index) => (
                             <div className="slides-fade" hidden={currentSlide === index ? false : true}>
-                                <div className="number-text">
+                                <div className="slide-number">
                                     {index + 1} / {pictures.length}
                                 </div>
                                 <img src={picture} alt="" style={{ width: '100%' }} />
