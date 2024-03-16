@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+     url("./fontFamily/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
 .carousel-container{
     overflow: hidden;
 }
@@ -14,9 +20,8 @@
     left: 49%;
     color: #FFF;
     text-align: center;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 500; 
 }
 

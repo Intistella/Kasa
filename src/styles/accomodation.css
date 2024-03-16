@@ -1,5 +1,12 @@
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+     url("./fontFamily/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
 .house-sheet{
     margin-top: 50px;
+
 }
 
 .house-carousel img{
@@ -7,4 +14,58 @@
     height: 415px;
     object-fit: cover;
     border-radius: 25px;
+}
+
+.house-data{
+    width: fit-content;
+}
+
+.house-title{
+    width: fit-content;
+    margin-top: 30px;
+    margin-bottom: 2px;
+    color: #FF6060;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.house-location{
+    margin-top: 0;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;   
+}
+
+.host-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: -125px;
+}
+
+.host-name{
+    color: #FF6060;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-wrap: wrap;
+    text-align: end;
+    width: 80px;
+}
+
+.host-picture{
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    background: #C4C4C4;
+}
+
+.house-dropdown{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
 }

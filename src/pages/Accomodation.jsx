@@ -34,7 +34,7 @@ export default function Accomodation(){
                 </div>
                 <div className="host-data">
                     <div className="host-details">
-                        <p>{logement.host.name}</p>
+                        <p className="host-name">{logement.host.name}</p>
                         <img src="{logement.host.picture}" alt="" className="host-picture"/>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ export default function Accomodation(){
                     <div className="houseDescription-dropdown">
                         <Dropdown title={'Description'} description={logement.description} />
                     </div>
-                    <div>
+                    <div className="houseDescription-dropdown">
                         <Dropdown title={'Equipements'} description={logement.equipments.map((equipment)=>(
                             <li key={equipment}>{equipment}</li>
                         ))} />
