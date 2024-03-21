@@ -10,7 +10,7 @@
 
 .slides-fade{
     position: relative;
-    width: 1240px;
+    width: 100%;
     height: 415px;
 }
 
@@ -27,16 +27,37 @@
 
 .previous-arrow{
     position: absolute;
-    top: 150px;
-    left: 100px;
+    top: 325px;
+    left: 110px;
     cursor: pointer;
     width: 48px !important;
 }
 .next-arrow{ 
     position: absolute;
-    top: 150px;
-    right: 100px;
+    top: 325px;
+    right: 110px;
     cursor: pointer;
     width: 48px !important;
 }
     
+/*************************************************************Media queries*************************************************/
+
+@media screen and (max-width: 768px){
+    .slides-fade{
+        width: 100%;
+        height: 255px;
+        object-fit: cover;
+    }
+
+    .previous-arrow{
+        width: 15px !important;
+        top: 127px;
+        left: 60px;
+    }
+
+    .next-arrow{ 
+        width: 15px !important;
+        top: 127px;
+        right: 60px;
+    }
+}

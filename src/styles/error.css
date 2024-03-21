@@ -27,11 +27,16 @@
     margin-bottom: 0;
 }
 
+.error-message{
+    display: flex;
+    justify-content: center;
+}
+
 .error-text{
     display: flex;
     justify-content: center;
     color: #FF6060;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     font-weight: 500;
 }
@@ -40,7 +45,29 @@
     display: flex;
     justify-content: center;
     color: #000;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 500;
+}
+
+/*******************************************************Media queries******************************************************/
+
+@media screen and (max-width: 768px){
+    .error-page{
+        gap: 113px;
+    }
+
+    .error-code{
+        font-size: 96px;
+    }
+
+    .error-text{
+        width: 260px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .error-link{
+        font-size: 14px;
+    }
 }

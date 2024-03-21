@@ -23,23 +23,27 @@ export default function Accomodation(){
                 <div className="house-carousel">
                     <Carousel pictures={logement.pictures} />
                 </div>
-                <div className="house-data">
-                    <div className="house-address">
-                        <h1 className="house-title">{logement.title}</h1>
-                        <p className="house-location">{logement.location}</p>
+                <div className="house-host-data">
+                    <div className="house-data">
+                        <div className="house-address">
+                            <h1 className="house-title">{logement.title}</h1>
+                            <p className="house-location">{logement.location}</p>
+                        </div>
+                        <div className="house-label">
+                            <Tags tag={logement.tags} />
+                        </div>
                     </div>
-                    <div className="house-label">
-                        <Tags tag={logement.tags} />
+                    <div className="hostdata-rating">
+                        <div className="host-data">
+                            <div className="host-details">
+                                <p className="host-name">{logement.host.name}</p>
+                                <img src="{logement.host.picture}" alt="" className="host-picture"/>
+                            </div>
+                        </div>
+                        <div className="house-rating">
+                            <Rating rating={logement.rating} />
+                        </div>
                     </div>
-                </div>
-                <div className="host-data">
-                    <div className="host-details">
-                        <p className="host-name">{logement.host.name}</p>
-                        <img src="{logement.host.picture}" alt="" className="host-picture"/>
-                    </div>
-                </div>
-                <div className="house-rating">
-                    <Rating rating={logement.rating} />
                 </div>
                 <div className="house-dropdown">
                     <div className="houseDescription-dropdown">

@@ -3,3 +3,17 @@
     display: flex;
     justify-content: flex-end;
 }
+
+/*************************************************************Media queries*************************************************/
+
+@media screen and (max-width: 767px){
+
+    
+   .rating-filledStar{
+    width: 18px;
+   }
+   
+   .rating-emptyStar{
+    width: 18px;
+   }
+}

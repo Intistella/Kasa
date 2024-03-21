@@ -6,19 +6,18 @@
 
 h3{ 
     color: #fff;
-   
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 700;
     padding-left: 10px;
 }
 
-.dropdown{
+.dropDown{
     display: flex;
     flex-direction: column;
 }
 
-.drop-btn{  
+.dropDown-btn{  
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +28,7 @@ h3{
     padding-right: 10px;
 }
 
-.dropdown-description{
+.dropDown-description{
     width: inherit !important;
     padding-left: 20px;
     padding-right: 20px;
@@ -41,3 +40,8 @@ h3{
     transform: rotate(180deg);
 }
 
+/*************************************************************Media queries*************************************************/
+
+@media screen and (max-width: 768px){
+   
+}

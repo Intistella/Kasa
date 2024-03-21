@@ -16,13 +16,21 @@
     align-items: center;
     border: 1px solid #FF6060;
     border-radius: 10px;
-    padding-top: 2px;
-    padding-bottom: 3px;
+    padding: 2px 15px 3px 15px;
     background: #FF6060;
-    width: 180px;
+}
+
+.tag-text{
     color: #fff;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 12px;
+}
 
+/*************************************************************Media queries*************************************************/
+
+@media screen and (max-width: 767px){
+    .tag-text{
+        font-size: 10px !important;
+    }
 }

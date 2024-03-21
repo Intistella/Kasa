@@ -4,12 +4,28 @@
      url("./fontFamily/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
 }
 
-body{
-    box-sizing: border-box;
-    margin: 0 auto;
+#root{
+    width: 100%;
     display: flex;
-    max-width: 1240px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body{
+    margin-right: 6.5%;
+    margin-left: 6.5%;
+}
+
+
+
+/*************************************************************Media queries*************************************************/
+
+@media screen and (max-width: 768px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    #root{
+        max-width: 100%;
+    }
 }

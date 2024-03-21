@@ -7,15 +7,15 @@ export default function Dropdown(props){
     const [open, setOpen] = useState(false)
     const toggle = () => setOpen(!open)
     return(
-        <div className="dropdown">
-            <div className="drop-btn" onClick={toggle}>
+        <div className="dropDown">
+            <div className="dropDown-btn" onClick={toggle}>
                 <h3>{props.title}</h3>
                 <img className={open ? 'arrowUp' : 'arrowDown'} src={arrowUp} alt="arrowUp" />
             </div>
 
             {open &&(
                 <div className="dropDown-IsOpen">
-                <div className="dropdown-description">
+                <div className="dropDown-description">
                     <p>{props.description} </p>
                 </div>
             </div>

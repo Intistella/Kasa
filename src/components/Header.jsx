@@ -4,13 +4,15 @@ import '../styles/header.css'
 
 export default function Header (){
     return(
-        <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <nav className='App-nav'>
-                <Link to="/home" className='nav-element'>Acceuil</Link>
-                <Link to="/about" className='nav-element'>A Propos</Link>
-                 
-            </nav>
+        <header>
+            <div className="App-header">
+                <img src={logo} className="App-logo" alt="logo" />  
+                <nav className='App-nav'>
+                    <Link to="/home" className='nav-element'>Acceuil</Link>
+                    <Link to="/about" className='nav-element'>A Propos</Link>   
+                </nav>
+            </div>
         </header>
     )
 }
+

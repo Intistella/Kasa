@@ -28,3 +28,17 @@ footer{
     margin-top: 0;
     margin-bottom: 29px;
 }
+
+/*************************************************************Media queries*************************************************/
+
+@media screen and (max-width: 767px){
+    .footer {
+        gap: 15px;
+    }
+
+    .footer-text{
+        width: 133.594px;
+        height: 46px;
+        font-size: 12px;
+    }
+}
