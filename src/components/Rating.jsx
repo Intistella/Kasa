@@ -18,7 +18,7 @@ export default function Rating ({ rating }){
     }
     return(
         <div className="rating">
-            <span key={rating}>{ratingStars}</span>
+            <span className="ratingStars" key={rating}>{ratingStars}</span>
         </div>
     )
 }

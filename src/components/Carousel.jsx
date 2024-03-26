@@ -3,6 +3,8 @@ import { useState } from "react"
 import '../data/logements.json'
 import nextArrow from '../assets/arrowRight.svg'
 import previousArrow from '../assets/arrowLeft.svg'
+import previousArrowPhone from '../assets/arrowLeftPhone.svg'
+import nextArrowPhone from '../assets/arrowRightPhone.svg'
 import '../styles/caroussel.css'
 
 
@@ -21,14 +23,16 @@ export default function ({pictures}){
                                 <div className="slide-number">
                                     {index + 1} / {pictures.length}
                                 </div>
-                                <img src={picture} alt="" style={{ width: '100%' }} />
+                                <img className="slideImg" src={picture} alt="" style={{ width: '100%' }} />
                             </div>
                         ))}
-                        <div onClick={()=> setCurrentSlide((currentSlide+image-1)%image)}>
+                        <div className="previousDiv" onClick={()=> setCurrentSlide((currentSlide+image-1)%image)}>
                             <img className="previous-arrow" src={previousArrow} alt="" />
+                            <img className="previous-arrow-phone" src={previousArrowPhone} alt=""/>
                         </div>
-                        <div onClick={()=>{setCurrentSlide((currentSlide+1)%image)}}>
+                        <div className="nextDiv" onClick={()=>{setCurrentSlide((currentSlide+1)%image)}}>
                             <img className="next-arrow" src={nextArrow} alt="" />
+                            <img className="next-arrow-phone" src={nextArrowPhone} alt=""/>
                         </div>
                     </div>
                 </div>

@@ -1,8 +1,4 @@
-@font-face {
-    font-family: "Montserrat";
-    src: local("Montserrat"),
-     url("./fontFamily/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .house-sheet{
     margin-top: 50px;
@@ -35,6 +31,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 500;   
+    margin-bottom: 25px;
 }
 
 .house-host-data{
@@ -104,6 +101,7 @@
 
     .house-location{
         font-size: 14px;
+        margin-bottom: 20px;
     }
 
     .house-host-data{
@@ -111,10 +109,19 @@
         flex-direction: column;
     }
 
+    .host-name{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 35px;   
+    }
+
     .hostdata-rating{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        margin-top: 10px;
+        height: 35px;
     }
 
     .host-details{
@@ -137,8 +144,9 @@
     }
 
     .house-dropdown{
+        margin-top: 15px;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
     }
 }

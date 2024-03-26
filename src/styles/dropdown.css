@@ -1,8 +1,4 @@
-@font-face {
-    font-family: "Montserrat";
-    src: local("Montserrat"),
-     url("./fontFamily/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 h3{ 
     color: #fff;
@@ -37,11 +33,6 @@ h3{
 }
 
 .arrowUp{
+    transition: transform .07s ease-in;
     transform: rotate(180deg);
-}
-
-/*************************************************************Media queries*************************************************/
-
-@media screen and (max-width: 768px){
-   
 }

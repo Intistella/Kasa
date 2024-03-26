@@ -1,8 +1,4 @@
-@font-face {
-    font-family: "Montserrat";
-    src: local("Montserrat"),
-     url("./fontFamily/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .carousel-container{
     overflow: hidden;
@@ -14,8 +10,13 @@
     height: 415px;
 }
 
+.slideImg{
+    filter: brightness(65%);
+}
+
 .slide-number{
     position: absolute;
+    z-index: 100;
     top: 370px;
     left: 49%;
     color: #FFF;
@@ -25,19 +26,25 @@
     font-weight: 500; 
 }
 
-.previous-arrow{
-    position: absolute;
-    top: 325px;
-    left: 110px;
-    cursor: pointer;
-    width: 48px !important;
+.previous-arrow-phone, .next-arrow-phone{
+    display: none;
 }
-.next-arrow{ 
+
+img.previous-arrow{
     position: absolute;
-    top: 325px;
-    right: 110px;
+    top: 380px;
+    left: 8%;
     cursor: pointer;
     width: 48px !important;
+    height: 80px !important;
+}
+img.next-arrow{ 
+    position: absolute;
+    top: 380px;
+    right: 8%;
+    cursor: pointer;
+    width: 48px !important;
+    height: 80px !important;
 }
     
 /*************************************************************Media queries*************************************************/
@@ -49,15 +56,33 @@
         object-fit: cover;
     }
 
-    .previous-arrow{
-        width: 15px !important;
-        top: 127px;
-        left: 60px;
+    .slide-number{
+        width: 100%;
+        top: 220px;
+        left: 0px;
     }
 
-    .next-arrow{ 
-        width: 15px !important;
-        top: 127px;
-        right: 60px;
+    .previous-arrow-phone,.next-arrow-phone{
+        display: block;
+    }
+
+    .previous-arrow, .next-arrow{
+        display: none;
+    }
+
+    img.previous-arrow-phone{
+        position: absolute;
+        width: 26px !important;
+        height: 27px !important;
+        top: 240px;
+        left: 8%;
+    }
+
+    img.next-arrow-phone{ 
+        position: absolute;
+        width: 26px !important;
+        height: 27px !important;
+        top: 240px;
+        right: 8%;
     }
 }

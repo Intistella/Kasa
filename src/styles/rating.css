@@ -1,19 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .rating{
     display: flex;
     justify-content: flex-end;
 }
 
+.rating-filledStar{
+    width: 30px;
+    height: 30px;
+}
+
+.rating-emptyStar{
+    width: 30px;
+    height: 30px;
+}
+
+.ratingStars{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
 /*************************************************************Media queries*************************************************/
 
-@media screen and (max-width: 767px){
-
-    
+@media screen and (max-width: 768px){
    .rating-filledStar{
-    width: 18px;
-   }
-   
-   .rating-emptyStar{
-    width: 18px;
-   }
+        width: 18px;
+        height: 18px;
+    }
+
+    .rating-emptyStar{
+        width: 18px;
+        height: 18px;
+    }
 }

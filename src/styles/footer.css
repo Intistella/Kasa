@@ -1,8 +1,4 @@
-@font-face {
-    font-family: "Montserrat";
-    src: local("Montserrat"),
-     url("./fontFamily/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 footer{
     margin-bottom: 0;
@@ -32,6 +28,9 @@ footer{
 /*************************************************************Media queries*************************************************/
 
 @media screen and (max-width: 767px){
+    footer{
+        margin-top: 35px;
+    }
     .footer {
         gap: 15px;
     }
