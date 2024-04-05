@@ -4,10 +4,14 @@
     overflow: hidden;
 }
 
+.slide{
+    position: relative;
+}
+
+
 .slides-fade{
     position: relative;
     width: 100%;
-    height: 415px;
 }
 
 .slideImg{
@@ -30,27 +34,69 @@
     display: none;
 }
 
-img.previous-arrow{
+.arrows-container{
     position: absolute;
-    top: 380px;
-    left: 8%;
+    justify-content: space-between;
+    top: 38%;
+    display: flex;
+    width: 100%;
+}
+
+.previousDiv{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nextDiv{
+    display: flex;
+    justify-content: flex-end;
+}
+
+img.previous-arrow, img.next-arrow{
     cursor: pointer;
     width: 48px !important;
     height: 80px !important;
+    padding: 16px;
 }
-img.next-arrow{ 
-    position: absolute;
-    top: 380px;
-    right: 8%;
-    cursor: pointer;
-    width: 48px !important;
-    height: 80px !important;
-}
-    
+
 /*************************************************************Media queries*************************************************/
+@media screen and (max-width: 1025px){
+    .previous-arrow-phone,.next-arrow-phone{
+        display: block;
+    }
+
+    .previous-arrow, .next-arrow{
+        display: none;
+    }
+
+    .arrows-container{
+        position: absolute;
+        justify-content: space-between;
+        top: 42%;
+        display: flex;
+        width: 100%;
+    }
+    
+    .previousDiv{
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .nextDiv{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    img.previous-arrow-phone, img.next-arrow-phone{
+        cursor: pointer;
+        width: 35px !important;
+        height: 36px !important;
+        padding: 16px;
+    }
+}
 
 @media screen and (max-width: 768px){
-    .slides-fade{
+    .slideImg{
         width: 100%;
         height: 255px;
         object-fit: cover;
@@ -70,19 +116,28 @@ img.next-arrow{
         display: none;
     }
 
-    img.previous-arrow-phone{
+    .arrows-container{
         position: absolute;
-        width: 26px !important;
-        height: 27px !important;
-        top: 240px;
-        left: 8%;
+        justify-content: space-between;
+        top: 42%;
+        display: flex;
+        width: 100%;
     }
 
-    img.next-arrow-phone{ 
-        position: absolute;
+    .previousDiv{
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .nextDiv{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    img.previous-arrow-phone, img.next-arrow-phone{
+        cursor: pointer;
         width: 26px !important;
         height: 27px !important;
-        top: 240px;
-        right: 8%;
+        padding: 5px;   
     }
 }

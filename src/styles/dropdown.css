@@ -30,9 +30,21 @@ h3{
     padding-right: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    transition: transform .5s;
+    transform: scale(0);
+    animation: onset 0s linear forwards .5s;
+}
+
+@keyframes onset{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
 }
 
 .arrowUp{
-    transition: transform .07s ease-in;
+    transition: transform .5s ease-in;
     transform: rotate(180deg);
 }

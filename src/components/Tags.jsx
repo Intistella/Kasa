@@ -7,7 +7,7 @@ export default function Labels({tag}){
             <div className="tag-wrapper">
                 {tag.map((tag,index)=>{ return (
                     <div className="tag-item" key={index}>
-                        <span className="tag-text" key={`${tag}-${index}`}>{tag}</span>
+                        <span className="tag-text" key={`${tag}-${index}`}> {tag} </span>
                     </div>
                 )})}
             </div>

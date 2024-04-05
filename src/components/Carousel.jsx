@@ -9,7 +9,7 @@ import '../styles/caroussel.css'
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default function ({pictures}){
+export default function Carousel ({pictures}){
     const [currentSlide, setCurrentSlide] = useState(0)
     const image = pictures.length
       
@@ -26,13 +26,15 @@ export default function ({pictures}){
                                 <img className="slideImg" src={picture} alt="" style={{ width: '100%' }} />
                             </div>
                         ))}
-                        <div className="previousDiv" onClick={()=> setCurrentSlide((currentSlide+image-1)%image)}>
-                            <img className="previous-arrow" src={previousArrow} alt="" />
-                            <img className="previous-arrow-phone" src={previousArrowPhone} alt=""/>
-                        </div>
-                        <div className="nextDiv" onClick={()=>{setCurrentSlide((currentSlide+1)%image)}}>
-                            <img className="next-arrow" src={nextArrow} alt="" />
-                            <img className="next-arrow-phone" src={nextArrowPhone} alt=""/>
+                        <div className="arrows-container">
+                            <div className="previousDiv" onClick={()=> setCurrentSlide((currentSlide+image-1)%image)}>
+                                <img className="previous-arrow" src={previousArrow} alt="" />
+                                <img className="previous-arrow-phone" src={previousArrowPhone} alt=""/>
+                            </div>
+                            <div className="nextDiv" onClick={()=>{setCurrentSlide((currentSlide+1)%image)}}>
+                                <img className="next-arrow" src={nextArrow} alt="" />
+                                <img className="next-arrow-phone" src={nextArrowPhone} alt=""/>
+                            </div>
                         </div>
                     </div>
                 </div>

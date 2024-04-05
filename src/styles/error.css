@@ -6,9 +6,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 139px;    
-    margin-top: 139px;
-    margin-bottom: 139px;
-
+    margin: 139px 3% 139px 3%;
 }
 
 .error-code{

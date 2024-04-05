@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+header{
+    margin: 0 3%;
+}
 
 .App-header{
     display: flex;
@@ -63,6 +66,7 @@
         flex-direction: row;
         height: 46px;
         margin-top: 20px;
+        margin-bottom: 30px;
     }
 
     .App-logo{
