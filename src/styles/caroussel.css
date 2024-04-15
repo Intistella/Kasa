@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 .carousel-container{
     overflow: hidden;
 }
@@ -103,9 +104,7 @@ img.previous-arrow, img.next-arrow{
     }
 
     .slide-number{
-        width: 100%;
-        top: 220px;
-        left: 0px;
+       display: none;
     }
 
     .previous-arrow-phone,.next-arrow-phone{

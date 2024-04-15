@@ -19,16 +19,17 @@ export default function Accomodation(){
 
     return (
         <>
-            <main className="house-sheet">
-                <div className="house-carousel">
-                    <Carousel pictures={logement.pictures} />
-                </div>
-                <div className="house-host-data">
-                    <div className="house-data">
-                        <div className="house-address">
-                            <h1 className="house-title">{logement.title}</h1>
-                            <p className="house-location">{logement.location}</p>
-                        </div>
+            <main className="accomodations-main">
+                <section className="house-sheet">
+                    <div className="house-carousel">
+                        <Carousel pictures={logement.pictures} />
+                    </div>
+                    <div className="house-host-data">
+                        <div className="house-data">
+                            <div className="house-address">
+                                <h1 className="house-title">{logement.title}</h1>
+                                <p className="house-location">{logement.location}</p>
+                            </div>
                         <div className="house-label">
                             <Tags tag={logement.tags} />
                         </div>
@@ -44,17 +45,18 @@ export default function Accomodation(){
                             <Rating rating={logement.rating} />
                         </div>
                     </div>
-                </div>
-                <div className="house-dropdown">
-                    <div className="houseDescription-dropdown">
-                        <Dropdown title={'Description'} description={logement.description} />
                     </div>
-                    <div className="houseDescription-dropdown">
-                        <Dropdown title={'Equipements'} description={logement.equipments.map((equipment)=>(
-                            <li key={equipment}>{equipment}</li>
-                        ))} />
+                    <div className="house-dropdown">
+                        <div className="houseDescription-dropdown">
+                            <Dropdown title={'Description'} description={logement.description} />
+                        </div>
+                        <div className="houseDescription-dropdown">
+                            <Dropdown title={'Equipements'} description={logement.equipments.map((equipment)=>(
+                                <li key={equipment}>{equipment}</li>
+                            ))} />
+                        </div>
                     </div>
-                </div>
+                </section>
             </main>
         </>    
                     

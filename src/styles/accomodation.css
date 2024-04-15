@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+.accomodations-main{
+    display: flex;
+    justify-content: center;
+}
+
 .house-sheet{
-    margin-left: 3%;
-    margin-right: 3%;
+    width: 100%;
+    max-width: 1250px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .house-carousel img{
     width: 100%;
-    height: auto;
+    height: 400px;
     max-height: 415px;
     object-fit: cover;
     border-radius: 25px;
@@ -88,8 +95,31 @@
 }
 
 /*************************************************************Media queries*************************************************/
+@media screen and (min-width: 1441px) {
+    .house-sheet{
+        width: 1300px;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .house-sheet{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .house-carousel img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+}
 
 @media screen and (max-width: 768px){
+    .house-sheet{
+       margin-right: 15px;
+       margin-left: 15px;
+    }
+
     .house-carousel img{
         width: 100%;
         height: 255px;

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-   
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
    
 .error-page{
     display: flex;
@@ -45,10 +44,16 @@
 }
 
 /*******************************************************Media queries******************************************************/
-
+@media screen and (max-width:1025px) {
+    .error-page{
+        display: flex;
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 768px){
     .error-page{
-        gap: 113px;
+        gap: 80px;
+        margin-top: 80px;
     }
 
     .error-code{

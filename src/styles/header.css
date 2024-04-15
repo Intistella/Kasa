@@ -1,14 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 header{
-    margin: 0 3%;
+    display: flex;
+    justify-content: center;
+    width: auto;
 }
 
 .App-header{
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    height: 150px;  
     width: 100%;
-    height: 150px; 
+    max-width: 1250px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .App-logo{
@@ -43,16 +49,22 @@ header{
 }
 
 /*******************************************************Media queries******************************************************/
+@media screen and (min-width: 1441px){
+    .App-header{
+        width: 1300px;
+    }
+}
 
-@media screen and (max-width: 1024px) {
-    .App-nav{
-        width: fit-content;
-        gap: 26px;
+@media screen and (max-width: 1025px) {
+    .App-header{
+        width: 100%;
+        margin-left: 3%;
+        margin-right: 3%;
     }
 
     .nav-element{
         width: fit-content;
-        font-size: 16px;
+        font-size: 20px;
         text-align: left;
         text-wrap: nowrap;
         text-transform: uppercase ;
@@ -65,8 +77,7 @@ header{
         display: flex;
         flex-direction: row;
         height: 46px;
-        margin-top: 20px;
-        margin-bottom: 30px;
+        margin: 20px 15px 30px 15px;
     }
 
     .App-logo{

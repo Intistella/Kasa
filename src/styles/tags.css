@@ -23,18 +23,17 @@
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
 }
 
 /*************************************************************Media queries*************************************************/
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
     .tag-text{
-        font-size: 10px !important;
+        font-size: 12px !important;
     }
     .tag-item{
         width: 87px;
-
     }
 }
