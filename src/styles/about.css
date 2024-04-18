@@ -50,7 +50,10 @@
 
 .aboutPage-rectangle{
     width: 1023px;
+}
 
+.dropDown-description{
+    font-size: 18px;
 }
 
 /*******************************************************Media queries******************************************************/
@@ -64,6 +67,10 @@
     .aboutPage-main{
         margin-left: 3%;
         margin-right: 3%;
+    }
+
+    .dropDown-description{
+        font-size: 16px;
     }
 }
 
@@ -87,5 +94,9 @@
 
     h3{
         font-size: 13px;
+    }
+
+    .dropDown-description{
+        font-size: 14px;
     }
 }
