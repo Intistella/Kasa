@@ -8,7 +8,6 @@ import nextArrowPhone from '../assets/arrowRightPhone.svg'
 import '../styles/caroussel.css'
 
 
-// eslint-disable-next-line import/no-anonymous-default-export
 export default function Carousel ({pictures}){
     const [currentSlide, setCurrentSlide] = useState(0)
     const image = pictures.length

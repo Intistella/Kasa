@@ -82,6 +82,7 @@
 
     .aboutPage-dropdown{
         gap: 15px;
+        margin: 0;
     }
 
     h3{
